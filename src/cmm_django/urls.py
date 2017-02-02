@@ -7,7 +7,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = patterns('',
     # Examples:
-    #url(r'^about/$', TemplateView.as_view(template_name='base.html'), name='home'),
+    url(r'^about/$', TemplateView.as_view(template_name='company/about.html'), name='about'),
     #url(r'^pricing/$', TemplateView.as_view(template_name='base.html'), name='home'),
     url(r'^contact/$', TemplateView.as_view(template_name='company/contact_us.html'), name='contact_us'),
     url(r'^$', 'cmm_django.views.home', name='home'),
